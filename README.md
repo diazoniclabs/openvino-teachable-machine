@@ -14,4 +14,4 @@ pip install openvino-dev
 
 !mo --input_model /content/frozen_models/final_model.pb --input_shape "[1,224,224,3]" --data_type=FP16
 
-Inspired by : # https://github.com/opencv/opencv/issues/16582
+Inspired by : https://github.com/opencv/opencv/issues/16582
