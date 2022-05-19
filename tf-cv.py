@@ -1,11 +1,11 @@
 import numpy as np
 import cv2
 
-net = cv2.dnn.readNet('final_model.xml','final_model.bin')
+net = cv2.dnn.readNetFromTensorflow('final_model.pb')
 
-label = ['Ameer','Phone']
+label = ['Prince','Ameer']
 
-net.setPreferableBackend(cv2.dnn.DNN_BACKEND_INFERENCE_ENGINE)
+#net.setPreferableBackend(cv2.dnn.DNN_BACKEND_INFERENCE_ENGINE)
 net.setPreferableTarget(cv2.dnn.DNN_TARGET_CPU) 
 
 vid_cap = cv2.VideoCapture(0)
@@ -31,7 +31,7 @@ while True:
     op = f'{label[classId]} - {confidence}%'
     print(op)
     
-    cv2.putText(frame, op, (30,50), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0, 255, 255), 2, cv2.LINE_AA)
+    cv2.putText(frame, op, (30,50), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0, 0, 255), 2, cv2.LINE_AA)
     t, _ = net.getPerfProfile()
     l = 'Inference time: %.2f ms' % (t * 1000.0 / cv2.getTickFrequency())
     cv2.putText(frame, l, (0, 15), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0))
