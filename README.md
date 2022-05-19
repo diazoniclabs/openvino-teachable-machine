@@ -16,4 +16,4 @@ pip install openvino-dev
 
 Inspired by : 
 
-[https://github.com/opencv/opencv/issues/16582]
+[Click here](https://github.com/opencv/opencv/issues/16582)
