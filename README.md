@@ -12,9 +12,9 @@
 
 **(Optional) Step 5**: Convert the (.pb) model into (.xml) and (.bin) file using model optimizer
 
-pip install openvino-dev[tensorflow2]==2021.4.2
+```pip install openvino-dev[tensorflow2]==2021.4.2
 
-!mo --input_model /content/frozen_models/final_model.pb --input_shape "[1,224,224,3]" --data_type=FP16 --output_dir /content
+!mo --input_model /content/frozen_models/final_model.pb --input_shape "[1,224,224,3]" --data_type=FP16 --output_dir /content```
 
 Inspired by : 
 
