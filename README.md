@@ -18,6 +18,11 @@ pip install openvino-dev[tensorflow2]==2021.4.2
 !mo --input_model /content/frozen_models/final_model.pb --input_shape "[1,224,224,3]" --data_type=FP16 --output_dir /content
 ```
 
+#How to run the python file?
+```
+python tf-cv-new.py --input_xml tf_final.xml --input_bin tf_final.bin
+```
+
 Inspired by : 
 
 [Click here](https://github.com/opencv/opencv/issues/16582)
