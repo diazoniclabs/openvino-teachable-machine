@@ -1,8 +1,15 @@
 import numpy as np
 import cv2
+import argparse
 
-net = cv2.dnn.readNetFromTensorflow('final_model.pb')
-#net = cv2.dnn.readNet('tf_final.xml','tf_final.bin')
+parser = argparse.ArgumentParser()
+parser.add_argument('--input_xml', type=str, required=True)
+parser.add_argument('--input_bin', type=str, required=True)
+
+args = parser.parse_args()
+
+#net = cv2.dnn.readNetFromTensorflow('final_model.pb')
+net = cv2.dnn.readNet(args.input_xml,args.input_bin)
 
 label = ['Category 1','Category 2']
 
