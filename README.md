@@ -1,6 +1,6 @@
 # image-classification-teachable-machine
 
-![image](https://user-images.githubusercontent.com/61781809/176462430-e076e549-d4b8-407a-9c2d-1d72d82d2758.png)
+![image](https://user-images.githubusercontent.com/61781809/176463362-a20fc6c0-5edc-4e16-b9b0-03e7efb49901.png)
 
 **Step 1**: Go to Teachable Machine and train an image classification model
 
