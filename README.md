@@ -2,15 +2,15 @@
 
 ![image](https://user-images.githubusercontent.com/61781809/176462430-e076e549-d4b8-407a-9c2d-1d72d82d2758.png)
 
-Step 1: Go to Teachable Machine and train an image classification model
+**Step 1**: Go to Teachable Machine and train an image classification model
 
-Step 2: Download the Keras model file (.h5 file type)
+**Step 2**: Download the Keras model file (.h5 file type)
 
-Step 3: Convert Keras model (.h5 file type) to Tensorflow model (.pb Graph file type) using h5 to pb model converter notebook ( Use Google Colab )
+**Step 3**: Convert Keras model (.h5 file type) to Tensorflow model (.pb Graph file type) using h5 to pb model converter notebook ( Use Google Colab )
 
-Step 4: Use tf-cv file for running model on Opencv DNN library
+**Step 4**: Use tf-cv file for running model on Opencv DNN library
 
-(Optional) Step 5: Convert the (.pb) model into (.xml) and (.bin) file using model optimizer
+**(Optional) Step 5**: Convert the (.pb) model into (.xml) and (.bin) file using model optimizer
 
 pip install openvino-dev[tensorflow2]==2021.4.2
 
