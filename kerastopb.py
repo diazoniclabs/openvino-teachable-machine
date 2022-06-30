@@ -30,4 +30,4 @@ tf.io.write_graph(graph_or_graph_def=frozen_func.graph,
                   as_text=False)
 
 
-# Run the file using the command python kerastopb.py --keras keras_model.h5
+# Run the file using the command python kerastopb.py --keras_file keras_model.h5
