@@ -7,9 +7,8 @@ from tensorflow.python.tools import freeze_graph
 from tensorflow.python.framework.convert_to_constants import convert_variables_to_constants_v2
 
 parser = argparse.ArgumentParser()
-args = parser.parse_args()
-
 parser.add_argument('--keras_file', type=str, required=True, help="Specify your keras file",default='keras_model.h5')
+args = parser.parse_args()
 
 model = tf.keras.models.load_model(args.keras_file)
 #tf.saved_model.save(model,'tf_model')
